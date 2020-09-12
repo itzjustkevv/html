@@ -4,10 +4,12 @@
 <meta charset="utf-8">
 <title> HTML 1</title>
 	<style>
-	i{
-		color: PURPLE;
-		}
+		Body{background-color: rosybrown;}
+		h1 {background-color: yellow}
 	
+		.leftcol{background-color: olivedrab;}
+		#listnames{font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; color:red;}
+		
 	</style>
 </head>
 
@@ -19,7 +21,38 @@
 <img src="images/Burger.JPG" alt="Krabby Patty" style="width: 400px;height: 600px;">
 <img src="images/Burger 1.JPG" alt="Are you intrigued yet?" style="width: 600px;height: 600px;">
 		<h3>Mr. Juicy Review </h3>
-<p>First off let me say that this is the first time in a while that I've gone out to eat ever since the whole covid situation kicked in and oh my... this was definitely worth going out for! If you've been craving a juicy burger lately with just the right amount of meat, cheese, and toppings, then look no further! Mr. Juicy is just the place for you! The fries are also on point! Crispy just as you'd expect fries to taste! (because who likes soggy fries lol) I will definitely stop by again sometime and try out their milkshakes, which I hear are pretty popular as well! I'd definitely recommend dining in since these burgers are pretty <strong title= "i mean JUICY." style="color:orange" >"Juicy"</strong> and no one likes their meat in soggy buns once they make the trip back home (or simply eat in the car!) <a href="https://www.yelp.com/biz/mr-juicy-san-antonio-2">(My Yelp Review!)</a></p>
+<p>First off let me say that this is the first time in a while that I've gone out to eat ever since the whole covid situation kicked in and oh my... this was definitely worth going out for! If you've been craving a juicy burger lately with just the right amount of meat, cheese, and toppings, then look no further! Mr. Juicy is just the place for you! The fries are also on point! Crispy just as you'd expect fries to taste! (because who likes soggy fries lol) I'd recommend trying out their <a href="Double Cheeseburger Combo.html">double cheeseburger combo</a> with their "wet" sauce! I will definitely stop by again sometime and try out their milkshakes, which I hear are pretty popular as well! I'd definitely recommend dining in since these burgers are pretty <strong title= "i mean JUICY." style="color:orange" >"Juicy"</strong> and no one likes their meat in soggy buns once they make the trip back home (or simply eat in the car!) <a href="https://www.yelp.com/biz/mr-juicy-san-antonio-2">(My Yelp Review!)</a></p>
+
+<table style="width:95%; border: thin solid; ">
+<tr align="left">
+	<th>Menu</th>
+	<th>Price</th>
+	<th>Rating</th>
+	</tr>
+	
+	<tr>
+		<td class="leftcol"><a href="Double Cheeseburger Combo.html">Double Cheeseburger Combo</a></td>
+		<td>$10.50</td>
+		<td>Excellent (10/10)</td>
+	</tr>
+	<tr>
+		<td class="leftcol">Single Cheeseburger</td>
+		<td>$4.50</td>
+		<td>Good (6/10)</td>
+		
+	</tr>
+	</table>
+	
+	
+	<h4 id="listnames"> Menu Items</h4>
+		<ul>
+			<li>Single Cheeseburger</li>
+			<li id="double patty"></li>
+			<li>Milkshake</li>
+			<li>Fries</li>
+		</ul>
 	
 </body>
+	<script>
+	document.getElementById("double patty") .innerHTML= "Double Cheeseburger";</script>
 </html>
